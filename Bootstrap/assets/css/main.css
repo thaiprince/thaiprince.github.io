@@ -1,0 +1,136 @@
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container-fluid{
+    background-color: #000000;
+}
+.margin-top{
+    margin-top: 10px;
+}
+span.badge{
+    top: -9px;
+}
+ul.navbar-nav li a:hover{
+    color: #e2524a!important;
+}
+.bg-dadada{
+    background-color: #dadada;
+}
+.bg-black{
+    background-color: black;
+}
+.text-black{
+    color: black;
+}
+.position-carousel{
+    left:10px;
+}
+#support{
+    width: 360px;
+    height: 105px;
+    font-size: 16px;
+    background-color: #f4f4f4 !important;
+  
+}
+#support:hover{
+    color: #e2524a;
+}
+#support:hover #icon-sp{
+    color:#e2524a;
+}
+#support:hover h6{
+    color:#e2524a;
+}
+#icon-sp{
+    padding-top: 20px;
+    font-size: 40px;
+    color: #888787;
+}
+button.h-red:hover{
+    background-color: red;
+}
+.product-title{
+    margin-top: 150px;
+    
+}
+.img-sp:hover p.product-title {
+    color: #e2524a;
+}
+.panner-content{
+    margin-top:60px;
+}
+#img-hv:hover img.category-1{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+img.category-1{
+    transition: 0.5s;
+}
+#img-hv{
+    overflow: hidden;
+}
+h1{
+    bottom: 70px;
+    right: 40px;
+    font-size: 48px;
+}
+#see-more{
+    bottom: 10px;
+    right: 26px;
+}
+.selling-content{
+    margin-top:80px;
+}
+.pnext-prev:hover{
+    color: #e2524a;
+    transition: 0.5s;
+}
+.pnext-prev{
+    font-size: 30px;
+}
+.pnext-prev i.color-e2524a{
+    color: #e2524a;
+}
+#share-product{
+    margin-top: 150px;
+}
+a.post-img img{
+    margin-top:50px;
+}
+.see-more {
+    margin-top: 100px;
+}#footer{
+    background-color: #212121;
+    margin-top: 60px;
+}
+#footer ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+#footer ul li a{
+    text-decoration: none;
+  
+}
+.infomation{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.img-sp a{
+    text-decoration: none;
+}
+#sp-hv:hover img.sp-1{
+    margin-top: 100px;
+}
+/* -------------------------------- */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.sub-menu{
+    position: absolute;
+  display: none;
+}
+.dropdown:hover .sub-menu{
+    display: block;
+}
