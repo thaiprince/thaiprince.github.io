@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/rating.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/plugin/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugin/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/plugin/owlcarousel/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="row justify-content-between d-none d-sm-flex">
+                    <div id="operating-time">
+                        <i class="far fa-clock"></i> Thứ 2 - Thứ 7: 8:00am - 22:00am
+                    </div>
+                    <div id="mail-suppport">
+                        <i class="far fa-envelope"></i> support@unitop.vn
+                    </div>
+                    <div id="number-phone">
+                        <i class="fas fa-phone-alt fa-flip-horizontal"></i> 09888.59.692
+                    </div>
+                </div>
+                <div class="row flex-wrap align-items-center justify-content-between py-3 py-xl-0">
+                    <a href="" id="logo" class="d-block ml-2 ml-sm-0"><img src="assets/images/logo.png" alt=""></a>
+                    <ul id="main-menu" class="list-unstyled d-none d-xl-flex mb-0">
+                        <li><a href="">TRANG CHỦ</a></li>
+                        <li><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">GIÀY</a></li>
+                        <li><a href="">TÚI XÁCH <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu list-unstyled">
+                                <li><a href="">Túi xách tay nữ</a></li>
+                                <li><a href="">Túi đeo chéo nữ</a></li>
+                                <li><a href="">Túi bản to</a></li>
+                                <li><a href="">Túi đeo vai</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">ÁO THUN</a></li>
+                        <li><a href="">ĐỒNG HỒ</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                    <div id="search-card" class="d-none d-xl-flex align-items-center">
+                        <button id="search"><i class="fas fa-search"></i></button>
+                        <button id="card"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                    <button id="navbar-toggle" class="d-xl-none"><i class="fas fa-bars" data-toggle="collapse" data-target="#responsive-menu"></i></div>
+                    <ul id="responsive-menu" class="w-100 list-unstyled collapse mb-0">
+                        <li>
+                            <form action=""><input type="search" name="" id="" placeholder="Search" class="form-control"></form>
+                        </li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">GIÀY</a></li>
+                        <li><a href="">ÁO THUN</a></li>
+                        <li><a href="">ĐỒNG HỒ</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">LIÊN</a></li>
+                        <li><a href="">XEM GIỎ HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end header-->
+        <div id="banner">
+            <div id="main-slide" class="carousel slide">
+                <!-- indicators -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#main-slide" data-slide-to="0"></li>
+                    <li data-target="#main-slide" data-slide-to="1"></li>
+                    <li data-target="#main-slide" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item  active">
+                        <a href="">
+                            <img src="assets/images/banner.png" alt="" class="d-block-w-100 img-fluid">
+                        </a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a href="">
+                            <img src="assets/images/banner.png" alt="" class="d-block-w-100 img-fluid">
+                        </a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a href="">
+                            <img src="assets/images/banner.png" alt="" class="d-block-w-100 img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end banner-->
+        <div id="introduce" class="border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 mb-3 mb-sm-0 text-center ">
+                        <div class="box bg-light border">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="d-block">Đổi trả trong vòng 30 ngày</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-3 mb-sm-0  text-center ">
+                        <div class="box bg-light border">
+                            <i class="fas fa-headphones"></i>
+                            <span class="d-block">Hỗ trợ 24/7 09888.59.692</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-3 mb-sm-0  text-center ">
+                        <div class="box bg-light border">
+                            <i class="fas fa-truck fa-flip-horizontal"></i>
+                            <span class="d-block">Miễn phí giao hàng toàn quốc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end introduce-->
+        <div id="products-new" class="container">
+            <div class="title row">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase">Sản phẩm Mới</h1>
+                    <span>Những sản phẩm là xu thế của thời trang 2019 được ưa chuộng</span>
+                </div>
+            </div>
+            <div class="body row">
+                <ul class="list-new-products row list-unstyled">
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-1.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-2.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-3.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-4.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-1.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-2.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-3.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-6 col-md-3">
+                        <div class="product-item">
+                            <a href="" class="pic-product d-block"><img src="assets/images/sp-4.png" alt="" class="img-fluid"></a>
+                            <div class="info-product">
+                                <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                    <div id="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" />
+                                        <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                    </div>
+                                    <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                                </div>
+                                <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                                <div class="price text-center text-sm-left">1.200.00đ</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--end products new-->
+        <div id="category" class="container">
+            <div class="row no-gutters">
+                <div class="col-6" id="shoes">
+                    <a href="" class="d-block"><img src="assets/images/category-1.png" alt="" class="img-fluid card-img"></a>
+                    <h1>Giày</h1>
+                    <a href="" class="see-more">Xem Thêm</a>
+                </div>
+                <div class="col-6">
+                    <div class="row no-gutters">
+                        <div class="col-12" id="clock">
+                            <a href="" class="d-block"><img src="assets/images/category-2.png" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12" id="clothes">
+                            <a href="" class="d-block"><img src="assets/images/category-3.png" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end category-->
+        <div id="selling" class="container">
+            <div class="title row">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase">Bán chạy</h1>
+                    <span>Bộ sưu tập những sản phẩm bán chạy nhất hệ thống, bây giờ là của bạn</span>
+                </div>
+            </div>
+            <div class="body row">
+                <script>
+                    $(document).ready(function() {
+                        $('#selling-slide').owlCarousel({
+                            loop: true,
+                            margin: 30,
+                            autoplay: true,
+                            autoplayTimeout: 2500,
+                            nav: true,
+                            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                            dots: false,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                576: {
+                                    items: 2
+                                },
+                                768: {
+                                    items: 4
+                                }
+                            }
+                        })
+                    });
+                </script>
+                <div class="owl-carousel owl-theme" id="selling-slide">
+                    <div class="item">
+                        <a href="" class="pic-product d-block"><img src="assets/images/sp-5.png" alt="" class="img-fluid"></a>
+                        <div class="info-product">
+                            <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                </div>
+                                <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                            </div>
+                            <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                            <div class="price text-center text-sm-left">1.200.00đ</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="" class="pic-product d-block"><img src="assets/images/sp-6.png" alt="" class="img-fluid"></a>
+                        <div class="info-product">
+                            <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                </div>
+                                <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                            </div>
+                            <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                            <div class="price text-center text-sm-left">1.200.00đ</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="" class="pic-product d-block"><img src="assets/images/sp-7.png" alt="" class="img-fluid"></a>
+                        <div class="info-product">
+                            <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                </div>
+                                <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                            </div>
+                            <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                            <div class="price text-center text-sm-left">1.200.00đ</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="" class="pic-product d-block"><img src="assets/images/sp-3.png" alt="" class="img-fluid"></a>
+                        <div class="info-product">
+                            <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                </div>
+                                <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                            </div>
+                            <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                            <div class="price text-center text-sm-left">1.200.00đ</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="" class="pic-product d-block"><img src="assets/images/sp-2.png" alt="" class="img-fluid"></a>
+                        <div class="info-product">
+                            <div class="clearfix d-flex justify-content-center justify-content-sm-start">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class="full" for="star5" title="Awesome - 5 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class="full" for="star4" title="Pretty good - 4 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class="full" for="star3" title="Meh - 3 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars" style="font-size: 14px;"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class="full" for="star1" title="Sucks big time - 1 star" style="font-size: 14px;"></label>
+                                </div>
+                                <span class="num-comment d-md-none d-lg-block">(8 nhận xét)</span>
+                            </div>
+                            <a href="" class="product-name d-block text-center text-sm-left">Túi xách hiệu JAKA Nhật Bản</a>
+                            <div class="price text-center text-sm-left">1.200.00đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end selling-->
+        <div id="share" class="container">
+            <div class="title row">
+                <div class="col-12 text-center">
+                    <h1 class="text-uppercase">Chia sẻ</h1>
+                    <span>Những bài viết mới về thời trang, bạn có thể xem bây giờ!</span>
+                </div>
+            </div>
+            <div class="body row">
+                <div class="col-md-4 card border-0 mb-3 mb-md-0">
+                    <a href="" class="post-thumb d-block">
+                        <img src="assets/images/post-1.png" alt="" class="card-img">
+                    </a>
+                    <div class="card-body text-center border">
+                        <span class="category">Thời trang</span>
+                        <h3 class="title-post">5 mẹo cơ bản để phối đồ</h3>
+                        <p class="post-date">June 10, 2020</p>
+                        <p class="post-desc">Tips and tricks that most people wouldn't highlight when colors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card border-0 mb-3 mb-md-0">
+                    <a href="" class="post-thumb d-block">
+                        <img src="assets/images/post-2.png" alt="" class="card-img">
+                    </a>
+                    <div class="card-body text-center border">
+                        <span class="category">Thời trang</span>
+                        <h3 class="title-post">5 mẹo cơ bản để phối đồ</h3>
+                        <p class="post-date">June 10, 2020</p>
+                        <p class="post-desc">Tips and tricks that most people wouldn't highlight when colors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card border-0 mb-3 mb-md-0">
+                    <a href="" class="post-thumb d-block">
+                        <img src="assets/images/post-3.png" alt="" class="card-img">
+                    </a>
+                    <div class="card-body text-center border">
+                        <span class="category">Thời trang</span>
+                        <h3 class="title-post">5 mẹo cơ bản để phối đồ</h3>
+                        <p class="post-date">June 10, 2020</p>
+                        <p class="post-desc">Tips and tricks that most people wouldn't highlight when colors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="" id="see-more" class="d-inline-block text-decoration-none text-uppercase">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <!--end share-->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-4 text-center text-sm-left">
+                        <div class="box-head">
+                            <h3>ĐỊA CHỈ</h3>
+                        </div>
+                        <ul class="box-body list list-unstyled">
+                            <li><a href=""><i class="fas fa-map-marker-alt"></i> Tòa N01T5 Bắc Từ Liên, Hà Nội</a></li>
+                            <li><a href=""><i class="fas fa-phone-alt fa-flip-horizontal"></i> 09888.59.692</a></li>
+                            <li><a href=""><i class="far fa-envelope "></i> support@unitop.vn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 text-center text-sm-left">
+                        <div class="box-head">
+                            <h3>GIỚI THIỆU</h3>
+                        </div>
+                        <ul class="box-body list list-unstyled">
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Cách đặt hàng</a></li>
+                            <li><a href="">Kiểm tra đơn hàng</a></li>
+                            <li><a href="">Hổ trợ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 col-md-3 text-center text-sm-left">
+                        <div class="box-head">
+                            <h3>DANH MỤC</h3>
+                        </div>
+                        <ul class="box-body list list-unstyled">
+                            <li><a href="">Giày thể thao</a></li>
+                            <li><a href="">Váy</a></li>
+                            <li><a href="">Kính mắt</a></li>
+                            <li><a href="">Túi xách</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2 text-center text-sm-left">
+                        <div class="box-head">
+                            <h3>SOCIAL</h3>
+                        </div>
+                        <ul class="box-body list list-unstyled">
+                            <li><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i> Youtobe</a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end footer-->
+        <div id="copy-right">
+            <div class="container text-center">
+                <p class="text-uppercase">©2019-2025 unitop academi - unitop.vn</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#main-slide").carousel({
+                interval: 4000,
+                ride: "carousel"
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="assets/js/rating.js"></script>
+</body>
+
+</html>
